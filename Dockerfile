@@ -7,7 +7,7 @@ LABEL maintainer="Owen Voke <owzie123@gmail.com>"
 
 COPY LICENSE.md README.md /
 
-RUN php -r "copy('https://phar.phpunit.de/phpunit.phar', 'phpunit.phar');"
+RUN php -r "copy('https://phar.phpunit.de/phpunit-4.phar', 'phpunit.phar');"
 RUN chmod +x phpunit.phar
 RUN mv phpunit.phar /usr/local/bin/phpunit
 
